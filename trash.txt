@@ -1,0 +1,38 @@
+<!-- Event Counter Starts
+    <div class="EventCounterContainer">
+        <div class="EventCounter container">
+            <div id="eventCounterHeading"> Lets Talk With Numbers </div>
+            <BR><BR>
+            <div class="CardCounterContainer row">
+                <div class="CardCounter col-md-3 col-sm-6 col-6">
+                    <div id="cardCounterIcon"> <img src="IMAGES/Corporate.png" alt=""> </div>
+                    <BR>
+                    <div id="cardCounterHeading">CORPORATE EVENTS</div>
+                    <BR>
+                    <div id="cardCounterNumbers"> 700+ </div>
+                </div>
+                <div class="CardCounter col-md-3 col-sm-6 col-6">
+                    <div id="cardCounterIcon"> <img src="IMAGES/wedding.png" alt=""> </div>
+                    <BR>
+                    <div id="cardCounterHeading">WEDDING EVENTS</div>
+                    <BR>
+                    <div id="cardCounterNumbers"> 1000+ </div>
+                </div>
+                <div class="CardCounter col-md-3 col-sm-6 col-6">
+                    <div id="cardCounterIcon"> <img src="IMAGES/Social.png" alt=""> </div>
+                    <BR>
+                    <div id="cardCounterHeading">SOCIAL EVENTS</div>
+                    <BR>
+                    <div id="cardCounterNumbers"> 300+ </div>
+                </div>
+                <div class="CardCounter col-md-3 col-sm-6 col-6">
+                    <div id="cardCounterIcon"> <img src="IMAGES/Other.png" alt=""> </div>
+                    <BR>
+                    <div id="cardCounterHeading">OTHER EVENTS</div>
+                    <BR>
+                    <div id="cardCounterNumbers"> 5000+ </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    Event Counter Ends -->

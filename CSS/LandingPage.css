@@ -1,0 +1,325 @@
+/*
+
+Embedded Fonts From Google Fonts
+
+font-family: 'Acme', sans-serif;
+font-family: 'Bungee Inline', cursive;
+font-family: 'Bungee Outline', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Galada', cursive;
+font-family: 'Holtwood One SC', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Shrikhand', cursive;
+
+font-family: 'Bungee', cursive;
+font-family: 'Coda Caption', sans-serif;
+font-family: 'Days One', sans-serif;
+font-family: 'Rubik Mono One', sans-serif;
+font-family: 'Secular One', sans-serif;
+font-family: 'Yellowtail', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bungee+Inline&family=Bungee+Outline&family=Cinzel:wght@500;600&family=Galada&family=Holtwood+One+SC&family=Lobster&family=Monoton&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Coda+Caption:wght@800&family=Days+One&family=Rubik+Mono+One&family=Secular+One&family=Yellowtail&display=swap');
+/*
+
+Global CSS 
+
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*
+
+LandingPage Background
+
+*/
+
+.LandingPageContainer {
+    position: relative;
+    background-image: url(../IMAGES/BG4.gif);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 115vh;
+    width: 100%;
+    color: white;
+}
+
+.LandingPageContainer .overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*background: #00000056;*/
+}
+
+
+/*
+
+header Start
+
+*/
+header {
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+    transition: 0.5s ease-in-out;
+}
+
+header .LogoandHamburger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LogoandHamburger #Logo {
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+    cursor: pointer;
+}
+
+.LogoandHamburger #Logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.LogoandHamburger #Hamburger i {
+    font-size: 1.8rem;
+    cursor: pointer;
+}   
+
+@media (max-width:517px) {
+    header {
+        padding: 20px 30px;
+    }
+}
+
+/*
+
+Header Section End
+
+*/
+
+/*
+
+Navigation Menu Section Start
+
+*/
+.LogoandHamburger  #Hamburger .NavigationMenu-Overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #000000ea;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+  
+.NavigationMenu-overlay-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.NavigationMenu-overlay-content-2 {
+    position: relative;
+    top: 0;
+    left: 80%;
+}
+
+.NavigationMenu-Overlay #nav-items {
+    padding: 10px 0px;
+    text-decoration: none;
+    font-size: 3.6rem;
+    color: #696868;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.NavigationMenu-Overlay #nav-items:hover, .NavigationMenu-Overlay #nav-items:hover {
+    color: #edc139;
+}
+
+.NavigationMenu-Overlay .closebtn #closeIcon {
+    font-size: 2rem;
+}
+
+.NavigationMenu-Overlay .closebtn {
+    position: absolute;
+    top: 32px;
+    right: 50px;
+}
+
+.NavigationMenu-Overlay .ContactContainer {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 480px) {
+    .NavigationMenu-Overlay #nav-items {
+        font-size: 2rem;
+    }
+    .NavigationMenu-Overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+/*
+
+Navigation Menu Section End
+
+*/
+
+/*
+
+Contact Section Start
+
+*/
+.ContactContainer .Contact {
+    padding: 30px 30px;
+    color: white;
+}
+
+.ContactContainer .Contact a {
+    text-decoration: none;
+    color: #edc139;
+}
+
+.Contact #contactEmail,#contactPhone,#contactLocation {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+@media (max-width: 992px) {
+    .NavigationMenu-Overlay .ContactContainer {
+        display: none;
+    }
+}
+
+/*
+
+Contact Section End
+
+*/
+
+
+
+
+/*
+
+LandingPage
+
+*/
+.LandingPage {
+    /*padding: 0px 50px;*/
+    position: relative;
+    z-index: 1;
+    top: 45%;
+    transform: translateY(-45%);
+}
+
+.LandingPage #landingPageHeading-1 {
+    font-size: 11vw;
+    font-family: 'Bungee Inline', cursive;
+    /* font-family: 'Monoton', cursive; */
+    text-align: center;
+    color: #edc139;
+}
+
+.LandingPage #landingPageHeading-2 {
+    font-size: 2.7rem;
+    text-align: center;
+    font-family: 'Holtwood One SC', serif;
+    color: #eae0c2;
+}
+
+.LandingPage #landingPageHeading-3 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Galada', cursive;
+    color: #eae0c2;
+}
+
+.LandingPage .LandingPageButton {
+    text-align: center;
+}
+
+.LandingPage .LandingPageButton a {
+    text-decoration: none;
+}
+
+.LandingPage .LandingPageButton #firstButton {
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color:#eae0c2;
+	border-radius:42px;
+	cursor:pointer;
+	color:black;
+	font-size:28px;
+	font-weight:bold;
+	padding:20px 5vw;
+	text-decoration:none;
+    text-shadow:0px 1px 50px #ffffff;
+}
+
+.LandingPage .LandingPageButton #firstButton:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#ccc2a6;
+}
+
+@media (max-width : 480px) {
+    header {
+        padding: 20px 20px;
+    }
+
+    .LandingPage {
+        padding: 20px 0px;
+    }
+
+    .LandingPage #landingPageHeading-2 {
+        margin-top: 10px;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    
+    .LandingPage #landingPageHeading-3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .LandingPage .LandingPageButton #firstButton {
+        font-size:20px;
+        padding:17px 30px;
+    }
+}

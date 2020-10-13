@@ -1,0 +1,63 @@
+.EventTypesContainer {
+    position: relative;
+    background-image: url(../IMAGES/2959.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    color: white;
+    padding: 20px 0px;
+}
+
+.EventTypesContainer .overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*background: #000000b9;*/
+}
+
+.EventTypesContainer .EventTypes #eventHeading-1 {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+    font-family: 'Bungee', cursive;
+    text-align: center;
+}
+
+.EventTypesContainer .EventTypes #eventPara {
+    font-size: 1.1rem;
+    font-weight: bold;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.EventTypesContainer .EventTypes .EventCard {
+    color: black;
+    background-color: #f8f9fa;
+}
+
+.EventCard #eventCardHeading {
+    font-size: 1.5rem;
+    font-family: 'Secular One', sans-serif;
+}
+
+.EventCard #eventCardPara {
+    
+}
+
+@media (max-width : 576px) {
+    .EventTypesContainer .EventTypes {
+        padding:10px 20px;
+    }
+}
+
+@media (max-width : 767px) {
+    .EventTypesContainer .EventTypes .EventCard {
+        margin: 20px 0px;
+    }
+}

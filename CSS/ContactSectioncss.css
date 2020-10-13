@@ -1,0 +1,108 @@
+.ContactLandingPageContainer {
+    position: relative;
+    background-image: url(../IMAGES/BG3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    color: white;
+}
+
+.ContactLandingPageContainer .overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0000009a;
+}
+
+.ContactLandingPageContainer .ContactLandingPage {
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ContactLandingPage #contactLandingPageHeading-1 {
+    font-size: 9vw;
+    text-align: center;
+    font-family: 'Bungee Inline', cursive;
+    /* font-family: 'Monoton', cursive; */
+    color: #edc139;
+}
+
+.ContactLandingPage #contactLandingPageHeading-2 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Holtwood One SC', serif;
+    color: #eae0c2;
+}
+
+@media (max-width : 480px) {
+    .ContactLandingPage #contactLandingPageHeading-2 {
+        margin-top: 10px;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+}
+
+/*
+
+Contact Section Main
+
+*/
+
+.ContactSectionContainer .ContactSection {
+    padding: 15px 0px;
+}
+
+#contactSectionHeading {
+    font-size: 3rem;
+    font-family: 'Bungee', cursive;
+    text-align: center;
+}
+
+#contactSectionPara {
+    font-size: 1.1rem;
+    font-weight: bold;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.FirstLastName, .EmailPhone {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.FirstLastName input, .EmailPhone input{
+    padding: 10px 5px;
+    width: 30vw;
+}
+
+.MsgContainer {
+    padding: 0px 6%;
+}
+
+.MsgContainer textarea {
+    height: 100%;
+    width: 100%;
+}
+
+.submitButton {
+    text-align: center;
+}
+
+.submitButton input {
+    padding: 10px 50px;
+}
+
+
+@media (max-width : 707px) {
+    .FirstLastName, .EmailPhone {
+        flex-wrap: wrap;
+    }
+}

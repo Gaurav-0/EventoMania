@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawasome -->
+    <script src="https://kit.fontawesome.com/0ff0b45b0e.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <!-- LandingPage CSS -->
+    <link rel="stylesheet" href="CSS/LandingPage.css">
+    <!-- Gallery CSS -->
+    <link rel="stylesheet" href="CSS/ContactSectioncss.css">
+    <style>
+        .custom-shape-divider-bottom-1601937984 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .custom-shape-divider-bottom-1601937984 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 100px;
+        }
+
+        .custom-shape-divider-bottom-1601937984 .shape-fill {
+            fill: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- LandingPage Starts -->
+    <section class="ContactLandingPageContainer">
+        <div class="overlay"></div>
+        <header class="NavigationBar" id="NavigationBar">
+            <div class="LogoandHamburger">
+                <div id="Logo">
+                    <a href="index.html">Eventomania</a>    
+                </div>
+                <div id="Hamburger">
+                    <i class="fas fa-align-right" onclick="openNav()"></i>
+                    <div id="NavigationMenu" class="NavigationMenu-Overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> 	<i class="fa fa-times" id="closeIcon"></i> </a>
+                        <div class="NavigationMenu-overlay-content container">
+                          <a href="index.html" id="nav-items">HOME</a>
+                          <a href="Gallery.html" id="nav-items">PORTFOLIO</a>
+                          <a href="#" id="nav-items">EVENTS</a>
+                          <a href="Contact.html" id="nav-items" style="color: #edc139;">CONTACT</a>
+                          <a href="About.html" id="nav-items">ABOUT</a>
+                          <a href="#" id="nav-items" style="color: #007bff;">LOGIN</a>
+                        </div>
+                        <div class="ContactContainer">
+                            <div class="Contact">
+                                <a href="#"><div id="contactEmail"> <i class="fa fa-envelope"></i>&nbsp;&nbsp; Email : portgasDace@gmail.com </div></a><BR>
+                                <a href="#"><div id="contactPhone"> <i class="fa fa-phone-alt"></i>&nbsp;&nbsp; Phone : 000-000-000 </div></a><BR>
+                                <a href="#EventTypesContainer"><div id="contactLocation"> <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; Pune, Maharashtra </div></a><BR>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="ContactLandingPage">
+            <div id="contactLandingPageHeading-1" data-aos="zoom-in-down" data-aos-duration="1000"> Reach Eventomania </div>
+            <BR><BR>
+            <div id="contactLandingPageHeading-2"> HOME / Contact </div>
+        </section>
+        <!-- Divider -->
+        <div class="custom-shape-divider-bottom-1601937984">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <!-- Divider Ends -->
+    </section>
+    <!-- LandingPage Ends -->
+
+    <!-- Contact Section Starts -->
+    <section class="ContactSectionContainer">
+        <div class="ContactSection container">
+            <div id="contactSectionHeading"> Reach US </div>
+            <BR>
+            <div class="ContactFormContainer">
+                <form action="" method="">
+                    <div class="FirstLastName">
+                        <div id="FirstNameContainer">
+                            <label> First Name</label>
+                            <BR>
+                            <input type="text" name="firstName" id="firstName" placeholder="Enter First Name">
+                        </div>
+                        <div id="LastNameContainer">
+                            <label> Last Name</label>
+                            <BR>
+                            <input type="text" name="lastName" id="lastName" placeholder="Enter Last Name">
+                        </div>
+                    </div>
+                    <BR><BR>
+                    <div class="EmailPhone">
+                        <div id="FirstNameContainer">
+                            <label> First Name</label>
+                            <BR>
+                            <input type="email" name="emailId" id="emailId" placeholder="Enter Email">
+                        </div>
+                        <div id="LastNameContainer">
+                            <label> Last Name</label>
+                            <BR>
+                            <input type="tel" name="telPhone" id="telPhone" placeholder="Enter Phone no.">
+                        </div>
+                    </div>
+                    <BR><BR>
+                    <div class="MsgContainer">
+                        <label>Enter Your Message Here</label>
+                        <BR>
+                        <textarea name="typeMsg" id="typeMsg" cols="30" rows="10"></textarea>
+                    </div>
+                    <BR>
+                    <div class="submitButton">
+                        <input type="submit" value="Submit" class="btn btn-primary btn-lg">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section Ends -->
+    
+    <!-- Optional JS-->
+
+    <!-- JQuery -->
+    <script src="JS/jquery-3.5.1.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="JS/bootstrap.js"></script>
+    <!-- Custom JS for Navigation Bar -->
+    <script src="JS/NavigationBar.js"></script>
+</body>
+</html>

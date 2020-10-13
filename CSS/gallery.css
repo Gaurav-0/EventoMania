@@ -1,0 +1,137 @@
+.GalleryLandingPageContainer {
+    position: relative;
+    background-image: url(../IMAGES/OE.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    color: white;
+}
+
+.GalleryLandingPageContainer .overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0000009a;
+}
+
+.GalleryLandingPageContainer .GalleryLandingPage {
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.GalleryLandingPage #galleryLandingPageHeading-1 {
+    font-size: 9vw;
+    text-align: center;
+    font-family: 'Bungee Inline', cursive;
+    /* font-family: 'Monoton', cursive; */
+    color: #edc139;
+}
+
+.GalleryLandingPage #galleryLandingPageHeading-2 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Holtwood One SC', serif;
+    color: #eae0c2;
+}
+
+
+@media (max-width : 480px) {
+
+    .GalleryLandingPage #galleryLandingPageHeading-2 {
+        margin-top: 10px;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+}
+
+
+
+/*
+
+Gallery Main CSS 
+
+*/
+
+.PortfolioContainer {
+    position: relative;
+    
+}
+
+.PortfolioContainer .Portfolio {
+    padding: 0px 10px;
+}
+
+.PortfolioContainer .Portfolio .WeddingImageContainer,.CorporateImageContainer,.SocialImageContainer{
+    margin:20px 0px;
+}
+
+.PortfolioContainer .Portfolio #portfolioImgHeading {
+    font-size: 3rem;
+    font-family: 'Bungee', cursive;
+    text-align: center;
+}
+
+.Portfolio .PImage {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.Portfolio .PImage .PortfolioCard {
+    padding:1em 1em;
+    margin-top:40px;
+    background-color:#f8f9fa;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+.Portfolio .PImage .PortfolioCard img {
+    height:auto;
+    width: 100%;
+    max-width:300px;
+}
+
+.Portfolio .PImage .More-Images {
+    background-color:#007bff;
+    color:white;
+    cursor: pointer;
+}
+
+.Portfolio .PImage .More-Images h1{
+    text-align: center;
+    margin-top:10px;
+    font-size:3em;
+    word-wrap: break-word;
+    height:auto;
+    width:300px;
+}
+
+@media (max-width: 684px) {
+    .Portfolio .PImage {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+    .PortfolioContainer .Portfolio #portfolioImgHeading {
+        padding: 8px 0px;
+    }
+
+    .PortfolioContainer .Portfolio {
+        padding: 0px 5px;
+    }
+
+    .Portfolio .PImage .PortfolioCard {
+        margin-top:20px;
+        box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+        cursor: pointer;
+    }
+}

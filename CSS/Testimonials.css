@@ -1,0 +1,98 @@
+.TestimonialsContainer {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.TestimonialsContainer .Testimonials {
+    padding: 10px 0px;
+}
+
+.TestimonialsContainer #TestimonialsMainHeading {
+    font-size: 3rem;
+    font-family: 'Bungee', cursive;
+    text-align: center;
+}
+
+.TestimonialsContainer #TestimonialsMainPara {
+    font-size: 1.9rem;
+    font-family: 'Secular One', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.Testimonials .TestCard {
+    text-align: center;
+    position: relative;
+    color: #f8f9fa;
+    background-color: #007bff;
+}
+
+.TestCard {
+    padding: 50px 0px;
+    margin: 10px 30px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+}
+
+.Testimonials .TestCard #testImage img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0px auto;
+    margin-top: -100px;
+}
+
+.Testimonials .TestCard #testStudentName {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.Testimonials .TestCard #testStudentPosition {
+    font-size: 1rem;
+}
+
+.Testimonials .TestCard #testStudentFeedback {
+    font-size: 1.5rem;
+}
+
+.Testimonials .TestCard #testStudentFeedback p {
+    padding:0px 100px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+
+@media (max-width: 640px) { 
+    .Testimonials .TestCard #testStudentFeedback p {
+        padding:0px 10px;
+    }
+}
+
+@media (max-width : 480px) {
+    .TestimonialsContainer #TestimonialsMainHeading {
+        font-size: 2.5rem;
+    }
+    
+    .TestimonialsContainer #TestimonialsMainPara {
+        font-size: 1.5rem;
+        font-family: 'Secular One', sans-serif;
+        font-weight: lighter;
+        padding: 10px;
+    }
+
+    .TestCard {
+        padding: 10px 0px;
+        margin: 0px 0px;
+        margin-top: 0px;
+        box-shadow: none;
+    }
+
+    .Testimonials .TestCard #testImage img {
+        margin-top: 0px;
+    }
+
+    .Testimonials .TestCard {
+        color: black;
+        background-color: #f8f9fa;
+    }
+}

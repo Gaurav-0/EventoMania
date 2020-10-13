@@ -1,0 +1,45 @@
+.EventCounterContainer {
+    background-color: #f8f9fa;
+}
+
+.EventCounterContainer .EventCounter {
+    padding: 20px 0px;
+}
+
+.EventCounterContainer #eventCounterHeading {
+    font-size: 3rem;
+    font-family: 'Bungee', cursive;
+    text-align: center;
+}
+/*
+.CardCounterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+*/
+.CardCounterContainer .CardCounter {
+    text-align: center;    
+}
+
+.CardCounter #cardCounterIcon img {
+    height: auto;
+    width: 50px;
+}
+
+.CardCounter #cardCounterHeading {
+    font-size: 1rem;
+    font-family: 'Secular One', sans-serif;
+}
+
+.CardCounter #cardCounterNumbers {
+    font-size: 1.5rem;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+@media (max-width : 480px) {
+    .CardCounter #cardCounterHeading {
+        font-size: 2.5rem;
+    }
+}

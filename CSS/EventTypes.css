@@ -1,10 +1,12 @@
 .EventTypesContainer {
     position: relative;
-    background-image: url(../IMAGES/2959.jpg);
+/*  background-image: url(../IMAGES/2959.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-color: #6617cb;
+    background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
     height: auto;
     width: 100%;
     color: white;
